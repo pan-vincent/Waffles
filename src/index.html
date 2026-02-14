@@ -1,9 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Documents</title>
-</head>
-<body>
+    <head>
+        <title>Mission Big Beaver</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="bookmark.css" />
+        <link rel="stylesheet" href="panel.css" />
+        <link rel="icon" href="../res/beaver.ico" />
+        <script defer src="index.js"></script>
+    </head>
+    <body>
+        <div id="dark_mode">
+            <img
+                onclick="theme()"
+                id="moon_button"
+                style="display: none"
+                src="../res/moon.png"
+            />
+            <img
+                onclick="theme()"
+                id="sun_button"
+                style="display:"
+                src="../res/sun.png"
+            />
+        </div>
+        <div id="bookmark-container">
+            <div class="bookmark" style="left: -300%">
+                <h1 class="bookmark-text left">Mission</h1>
+                <h1 class="bookmark-text right">0</h1>
+            </div>
+            <div class="bookmark">
+                <h1 class="bookmark-text left">Guide</h1>
+                <h1 class="bookmark-text right">1</h1>
+            </div>
+            <div class="bookmark">
+                <h1 class="bookmark-text left">Dossier</h1>
+                <h1 class="bookmark-text right">2</h1>
+            </div>
+            <div class="bookmark">
+                <h1 class="bookmark-text left" style="font-size: 160%">
+                    Translated Dossier
+                </h1>
+                <h1 class="bookmark-text right">3</h1>
+            </div>
+            <div class="bookmark">
+                <h1 class="bookmark-text left">Telegram</h1>
+                <h1 class="bookmark-text right">4</h1>
+            </div>
+        </div>
 
-</body>
+        <div id="mission">
+            <div class="center">
+                <h1 class="panel-title">Mission Details</h1>
+            </div>
+            <div class="center">
+                <h3 class="panel-content">
+                    Dear Donut Joe<br />
+                    As you know, Equestria has lived in Harmony for over a
+                    millennium under the guidance of Princess Celestia. Although
+                    the nation has faced only minor threats recently,
+                    circumstances seem to be changing, as Equestria may be at
+                    risk of neighbours uniting against us, becoming a credible
+                    threat.
+                    <br />
+                    Privy Council doubts the sincerity of Stalliongrad and its
+                    leader Altidiya. Regardless of our aid with their famine, a
+                    problem present for many focuses at this point, we have
+                    clear evidence of them planning something, possibly against
+                    Equestria. Despite the greatness of our country, we have no
+                    other option but to ask you to decypher intel sent by our
+                    double agent before being captured.
+                    <br />
+                    We have concrete evidence of it being not an ecncrypted
+                    message, but some sort of an artificial language created for
+                    the sake of secrecy. Unfortunately, any attempts in
+                    translation did not yield any positive results.
+                    <br />
+                    Your task will be to translate the telegram and find out possible location of a future attack.
+                    <br/>
+                    We've listed available files on your left
+                </h3>
+            </div>
+        </div>
+        <div id="guide" style="display: none">
+            <div class="center">
+                <h1 class="panel-title">Language STGRD</h1>
+            </div>
+            <div class="center">
+                <h3 class="panel-content">
+                    After trying to read the nonsensical language of theirs,
+                    I've managed to write down a small guide on the basics of
+                    the language. I hope to be able to complete it in the next
+                    few days. Fortunately it seems to have a very logical
+                    structure without irregularities, but with a lot of
+                    aglutination... but it's not worth reading, the best way of
+                    decyphering it is by translating word by word and then
+                    looking at the meaning.
+                    <br />
+                </h3>
+            </div>
+            <div class="center middle">
+                <h3 class="panel-content">
+                    <span class="word">i</span> - I
+                    <br />
+                    <span class="word">ü</span> - you
+                    <br />
+                    <span class="word">wü/æ/o</span> - he/she/it
+                    <br />
+                    <span class="word">ïţi</span> - here
+                    <br />
+                    <span class="word">ëţi</span> - there
+                    <br />
+                    <span class="word">ţe</span> - what/that/thing
+                    <br />
+                    <span class="word">ţi</span> - who
+                </h3>
+                <h3 class="panel-content middle">
+                    <span class="word">nă(u)</span> - we(including you)
+                    <br />
+                    <span class="word">wæ</span> - you plural/polite
+                    <br />
+                    <span class="word">læs</span> - they
+                    <br />
+                    <span class="word">ţez</span> - where
+                    <br />
+                    <span class="word">sče</span> - for/about
+                    <br />
+                    <span class="word">sce</span> - why
+                    <br />
+                    <span class="word">om</span> - how/like
+                </h3>
+            </div>
+            <div class="center">
+                <h3 class="panel-content">
+                    It has a lot of suffixes and prefixes that may be used
+                    independetly
+                    <br />
+                </h3>
+            </div>
+            <div class="center middle">
+                <h3 class="panel-content">
+                    <span class="word">ac-</span> not/lack of
+                    <br />
+                    <span class="word">mi-</span> opposite of
+                    <br />
+                    <span class="word">-s/-ç</span> plural marker(-ç if s already present)
+                    <br />
+                    <span class="word">-o</span> subject marker
+                    <br />
+                    <span class="word">-ĳ</span> object marker
+                    <br />
+                    <span class="word">-ru</span> possesive/counter marker
+                    <br />
+                    <span class="word">pu-</span> comparative marker
+                    <br />
+                    <span class="word">-ret</span> superlative marker
+                </h3>
+                <h3 class="panel-content middle">
+                    <span class="word">-se</span> in/inside
+                    <br />
+                    <span class="word">ķapoče</span> on/on top of(object marked
+                    with -ru)
+                    <br />
+                    <span class="word">miz-</span> outside
+                    <br />
+                    <span class="word">-nj</span> adjective/adverb marker
+                    <br />
+                    <span class="word">-sj</span> noun marker
+                    <br />
+                    <span class="word">-(e)võt</span> verb marker
+                    <br />
+                    <span class="word">au-</span> direction marker
+                </h3>
+            </div>
+            <div class="center">
+                <h3 class="panel-content">
+                    Following this minimalistic pattern, even conjugation is
+                    made by adding pieces. Infinitive form of a verb always ends
+                    on a <span class="word">-õt</span>. This ending is omitted
+                    when the verb has a suffix.<br/>
+                    Some of the structures used in the language are:<br/>
+                    - <span class="word">denõt(give) + verb x</span> make someone do x<br />
+                    - <span class="word">x seõt(be) + verb y</span> 1: x is act of doing y; 2: x is y-ed(done, eaten, etc)
+                    Aditionally, some of them may be used separately as irregular verbs, for example a
+                </h3>
+            </div>
+
+            <div class="center middle">
+                <h3 class="panel-content">
+                    Present/Future
+                    <br />
+                    i <span class="word">-e</span>
+                    <br />
+                    ü <span class="word">-ëj</span>
+                    <br />
+                    wü/æ/o <span class="word">-o</span>
+                    <br />
+                    nă <span class="word">-es</span>
+                    <br />
+                    wæ <span class="word">-os</span>
+                    <br />
+                    læs <span class="word">-esj</span>
+                </h3>
+                <h3 class="panel-content middle">
+                    Past <span class="word">-ǆ</span>
+                    <br />
+                    Conditional <span class="word">rei-</span>
+                    <br />
+                    Imperative <span class="word">-käna</span>
+                    <br />
+                    Gerund <span class="word">avë-</span>
+                    <br />
+                    begin <span class="word">a-</span>
+                    <br />
+                    end <span class="word">ani-</span>
+                    <br />
+                    be able/can <span class="word">brò-</span>
+                </h3>
+            </div>
+        </div>
+        <div id="dossier" style="display: none">
+            <div class="center">
+                <h1 class="panel-title">Dossier</h1>
+            </div>
+            <div class="center">
+                <h3 class="panel-content" style="width: 45%; padding-left: 1%">
+                    <img
+                        style="
+                            width: 25%;
+                            float: left;
+                            height: auto;
+                            border: solid 3px black;
+                            border-radius: 5px;
+                        "
+                        src="../res/sensei.png"
+                    />
+                    Zvasj: Alexej Dobov<br />
+                    Mizvasj: Dub črvnj<br />
+                    Asesj: 972ru 4ru 20 <br />
+                    Kljáča: SGMS(Stalliongrad Miznjru Sitsj)<br />
+
+                    Snatevsj: <br />
+                    - Svukevsjs: Injiţ, Čečki, Vlgarki<br />
+                    - Seluč: 5 ru zim Ekvestjase, ke 3 ru zim mit kritògrafja<br />
+                    - Villæ: Injerija ke arkitura
+                    <br />
+                    Komtoo Zbiwsčnj Kasto velo aeķõt kentrònj labortorru ķapoče
+                    infomacëij ke trokõt Kantrlötse dambaru operacëij. Komtoo
+                    eķo se miočevnj infiltacëij, densj seõt kònecëij mit
+                    lokalnj infomacëvsjç, ke aeķsjij neonj infomacëru sče asenj
+                    operacës.
+                    <br />Avelavorǆ mit nău ëţinj ausedí, avëdemostacëoǆ bròsjij adaptacëru strateğisru aveočeõt
+                    evorucënj komtoru bròşanţsjij ke avëdemostacëoǆ bròsjij
+                    Injiţru, năo idëves ïţinj dí wüo seo bestoret opcësru enij
+                    sče ïţinj komto.
+                </h3>
+            </div>
+        </div>
+        <div id="translated-dossier" style="display: none">
+            <div class="center">
+                <h1 class="panel-title">Dos12sier</h1>
+            </div>
+            <div class="center">
+                <h3 class="panel-content" style="width: 45%; padding-left: 1%">
+                    <img
+                        style="
+                            width: 25%;
+                            float: left;
+                            height: auto;
+                            border: solid 3px black;
+                            border-radius: 5px;
+                        "
+                        src="../res/sensei.png"
+                    />
+                    Name: Alexej Dobov<br />
+                    NickName: Red oak<br />
+                    Birth: 04/20/972<br />
+                    Subdivision: SGED(Stalliongrad External Defense)<br />
+
+                    Experience/Knowledge: <br />
+                    - Languages: English, Czech, Bulgarian<br />
+                    - Practice: 5 years in Equestria, and 3 years in
+                    cryptography<br />
+                    - Degree: Engineering and architecturing
+                    <br />
+                    Mission Big Beaver wants to [gather](start having)
+                    [intelligence](information) on the central lab and
+                    [disrupt](break) operation of the dam in Canterlot. The
+                    mission [involves](has inside) [undercover](without being
+                    noticed) infiltration, [establishing](to make be)
+                    connections with local informants, and gathering new
+                    information for a [future](one that will start being)
+                    operation.
+                    <br />Having worked with us [for many years](from that day), having demonstrated [ability](thing that can be) to
+                    adjust strategies [based on](looking at(on)) evolving
+                    mission [variables](things that can change) and demonstrated
+                    [fluency in](ability of) English, we [believe](think) he's [now/at the moment](this day)
+                    one of the best options for this mission
+                </h3>
+            </div>
+        </div>
+        <div id="telegram" style="display: none">
+            <div class="center">
+                <h1 class="panel-title">Unintelligible Telegram</h1>
+            </div>
+            <div class="center">
+                <h3 class="panel-content">
+                    Au: Kmnder Aldija<br />
+                    Ause: Dub črvnj<br />
+                    <br />
+                    Dí: 5 6ru 1005ru
+                    Sče: Komto Kasto<br /><br />
+                    Kmnderω<br />
+                    Io see ïţinj díse egzekücëse komtoru ke vele svukevõt auü acen
+                    neonj evorucësjru. Io mi aniseeǆ infiltacëse localnj villæru om
+                    en injerijasj, ke localnj contakcëso denesj best resultacësij. Io
+                    očeǆ ţesij sče ïţisj operacë kentrònj labortorse, mit potencë slabkevsj ţeo bròseo
+                    egzploïcëvnj. Ïţinj díçse, Io participëǆ ense meeting-ru ţez
+                    kritikeljnj informacësij sče damba seeǆ svukevõt. 
+                    Ke io očeǆ pu sitsjij dzonse, ţeo deno seõt şanţsjij mit iru komto.<br/>
+                    Io mi anikontinuëo villævõt kònecëij mit localnj
+                    infomacëvsjç sče egztracë pu informacësij. Io ke dene aseõt en strateğisru sče troksj dambaru operacëij
+                    aveočeõt informacëçse ţe eķes.<br/>
+                    Eno ţeru ţeij svukeve au wæ seo nă eķes acij personejru. Nă veles zbiwsčõt aktivinsjij dzonse sče pubest resultacësij. Eno villæsru ţese voles a operacëij zbiwsčnj infiltacëij seo krupočkinò, mike
+                    nemëzidao käna pu sitsjçij sče ïţisj nă idëves käna woij črvnj srčese.
+                    Ani tlgramru.
+                </h3>
+            </div>
+        </div>
+        <div id="spacer" style="height: 500px"></div>
+    </body>
 </html>

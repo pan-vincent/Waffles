@@ -1,4 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Special+Elite&display=swap');
 * {
-    height: 100%;   
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: color 1s ease-in-out;
+    visibility: inherit;
+}
+body {
+    background-color: white;
+    transition: 2s;
+}
+#dark_mode{
+    width: 100px;
+    height: 100px;
+    top: -80px;
+    right: 100px;
+    position: absolute;
+    transition: 0.3s;
+    display: flex;
+    justify-content: left;
+    border-radius: 0 0 25px 25px;
+}
+#dark_mode:hover{
+    transform: translateY(80px);
+}
+h3{
+    position: relative;
+}
+.word{
+    color: #6b87be;
 }

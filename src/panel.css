@@ -1,0 +1,38 @@
+:root{
+    --text-color: black;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.panel-title {
+    padding-top: 15vh;
+    padding-bottom: 20px;
+    border-bottom-style: dotted;
+    height: 5vh;
+    width: 45%;
+    text-align: center;
+        color: var(--text-color);
+        font-family: "Special Elite", system-ui;
+    font-size: 3vh;
+}
+.panel-content {
+    margin-top: 2vh;
+    width: 45%;
+    text-align: justify;
+    color: var(--text-color);
+    font-family: "Special Elite", system-ui;
+    line-height: 1.5;
+    font-size: 2vh;
+}
+.middle{
+    position: relative;
+}
+.middle h3{
+    position: relative;
+    width: 20%;
+    left: 5%;
+    text-align:left;
+}

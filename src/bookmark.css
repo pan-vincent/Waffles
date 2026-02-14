@@ -1,0 +1,36 @@
+
+#bookmark-container {
+    position: fixed;
+    width: 20%;
+    left: 0;
+    top: 10vh;
+    z-index: 1;
+}
+.bookmark {
+    position: relative;
+    margin-top: 20px;
+    left: -75%;
+    transition: transform .5s, left .5s;
+    
+    height: 60px;
+    width: 100%;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0% 0%);
+    
+    display: flex;
+    align-items: center;            
+}
+
+.bookmark:hover {
+    transform: translateX(75%);
+}
+.bookmark-text{
+    font-family: "Special Elite", system-ui;
+}
+.left{
+    width: 50%;
+    text-align: center;
+}
+.right{
+    width: 35%;
+    text-align: right;
+}
